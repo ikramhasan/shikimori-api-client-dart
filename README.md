@@ -1,4 +1,4 @@
-![Banner](docs/banner.png)
+![Banner](doc/banner.png)
 
 Pure dart, ultra-lite package to interact with the [Shikimori Anime API](https://shikimori.one/api/doc/1.0)
 
