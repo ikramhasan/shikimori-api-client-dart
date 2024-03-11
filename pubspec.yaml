@@ -10,6 +10,9 @@ topics:
   - dart
   - anime
   - manga
+screenshots:
+  - description: The banner image
+  - path: https://raw.githubusercontent.com/ikramhasan/shikimori-api-client-dart/main/docs/banner.png
 
 environment:
   sdk: ^3.3.0
