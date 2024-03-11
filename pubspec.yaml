@@ -1,6 +1,6 @@
 name: shikimori_api
 description: A pure dart, ultra-lite package to interact with the Shikimori API.
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/ikramhasan/shikimori-api-client-dart
 homepage: https://github.com/ikramhasan/shikimori-api-client-dart
 issue_tracker: https://github.com/ikramhasan/shikimori-api-client-dart/issues
