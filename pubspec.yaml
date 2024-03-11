@@ -12,7 +12,7 @@ topics:
   - manga
 screenshots:
   - description: The banner image
-  - path: doc/banner.png
+    path: doc/banner.png
 
 environment:
   sdk: ^3.3.0
