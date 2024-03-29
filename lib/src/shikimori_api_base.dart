@@ -1,6 +1,7 @@
 import 'package:shikimori_api/src/models/anime.dart';
 import 'package:shikimori_api/src/models/anime_image.dart';
 import 'package:shikimori_api/src/models/anime_video.dart';
+import 'package:shikimori_api/src/models/character.dart';
 import 'package:shikimori_api/src/models/external_link.dart';
 import 'package:shikimori_api/src/models/role.dart';
 import 'package:shikimori_api/src/models/topic.dart';

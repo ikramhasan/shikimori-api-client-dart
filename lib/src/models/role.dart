@@ -1,54 +1,5 @@
+import 'package:shikimori_api/src/models/character.dart';
 import 'package:shikimori_api/src/models/anime_image.dart';
-
-class Character {
-  final int id;
-  final String name;
-  final String russian;
-  final AnimeImage image;
-  final String url;
-
-  Character({
-    required this.id,
-    required this.name,
-    required this.russian,
-    required this.image,
-    required this.url,
-  });
-
-  factory Character.fromJson(Map<String, dynamic> json) {
-    return Character(
-      id: json['id'],
-      name: json['name'],
-      russian: json['russian'],
-      image: AnimeImage.fromJson(json['image']),
-      url: json['url'],
-    );
-  }
-
-  @override
-  String toString() {
-    return 'Character{id: $id, name: $name, russian: $russian, image: $image, url: $url}';
-  }
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Character &&
-          runtimeType == other.runtimeType &&
-          id == other.id &&
-          name == other.name &&
-          russian == other.russian &&
-          image == other.image &&
-          url == other.url;
-
-  @override
-  int get hashCode =>
-      id.hashCode ^
-      name.hashCode ^
-      russian.hashCode ^
-      image.hashCode ^
-      url.hashCode;
-}
 
 class Person {
   final int id;

@@ -7,17 +7,17 @@ class Character {
   final String? russian;
   final String url;
   final String? altname;
-  final String japanese;
+  final String? japanese;
   final String? description;
-  final String descriptionHtml;
+  final String? descriptionHtml;
   final String? descriptionSource;
-  final bool favoured;
-  final int threadId;
-  final int topicId;
-  final String updatedAt;
-  final List<Seyu> seyu;
+  final bool? favoured;
+  final int? threadId;
+  final int? topicId;
+  final String? updatedAt;
+  final List<Seyu>? seyu;
   final AnimeImage image;
-  final List<Anime> animes;
+  final List<Anime>? animes;
 
   Character({
     required this.id,

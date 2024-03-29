@@ -1,3 +1,8 @@
+## 0.0.4
+
+- Updated imports to include models
+- Updated `pubspec.yaml` to include dart `environment` and `sdk` version
+
 ## 0.0.3
 
 - Fix banner uri in README.md
