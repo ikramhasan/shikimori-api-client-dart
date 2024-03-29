@@ -1,14 +1,14 @@
 class AnimeImage {
   final String original;
   final String preview;
-  final String x96;
-  final String x48;
+  String? x96;
+  String? x48;
 
   AnimeImage({
     required this.original,
     required this.preview,
-    required this.x96,
-    required this.x48,
+    this.x96,
+    this.x48,
   });
 
   factory AnimeImage.fromJson(Map<String, dynamic> json) {

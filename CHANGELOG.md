@@ -1,3 +1,7 @@
+## 0.0.6
+
+- Added anime details
+
 ## 0.0.5
 
 - Fix duplicate imports

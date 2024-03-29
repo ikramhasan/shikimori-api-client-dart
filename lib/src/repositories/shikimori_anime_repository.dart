@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:shikimori_api/shikimori_api.dart';
 import 'package:shikimori_api/src/services/http_service.dart';
+import 'package:translator/translator.dart';
 
 abstract interface class ShikimoriAnimeRepository {
   Future<List<Anime>> getPopularAnimeList({required int limit});
@@ -41,9 +42,21 @@ class ShikimoriAnimeRepositoryImpl implements ShikimoriAnimeRepository {
 
   @override
   Future<Anime> getAnimeById({required int id}) async {
+    final translator = GoogleTranslator();
     final response = await _httpService.get('/animes/$id');
     final json = jsonDecode(response);
-    return Anime.fromJson(json);
+    final anime = Anime.fromJson(json);
+    if (anime.description != null) {
+      final translatedDescription = await translator.translate(
+        anime.description!,
+        from: 'ru',
+        to: 'en',
+      );
+
+      return anime.copyWith(description: translatedDescription.text);
+    }
+
+    return anime;
   }
 
   @override

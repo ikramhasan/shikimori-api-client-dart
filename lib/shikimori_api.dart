@@ -9,3 +9,5 @@ export 'src/models/anime_video.dart';
 export 'src/models/external_link.dart';
 export 'src/models/topic.dart';
 export 'src/models/role.dart';
+export 'src/models/status_stat.dart';
+export 'src/models/genre.dart';
