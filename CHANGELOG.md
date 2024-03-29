@@ -1,3 +1,7 @@
+## 0.0.5
+
+- Fix duplicate imports
+
 ## 0.0.4
 
 - Updated imports to include models

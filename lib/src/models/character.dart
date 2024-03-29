@@ -1,5 +1,4 @@
-import 'package:shikimori_api/src/models/anime.dart';
-import 'package:shikimori_api/src/models/anime_image.dart';
+import 'package:shikimori_api/shikimori_api.dart';
 
 class Character {
   final int id;
@@ -53,9 +52,13 @@ class Character {
       threadId: json['thread_id'],
       topicId: json['topic_id'],
       updatedAt: json['updated_at'],
-      seyu: (json['seyu'] as List).map((e) => Seyu.fromJson(e)).toList(),
+      seyu: json['seyu'] != null
+          ? (json['seyu'] as List).map((e) => Seyu.fromJson(e)).toList()
+          : null,
       image: AnimeImage.fromJson(json['image']),
-      animes: (json['animes'] as List).map((e) => Anime.fromJson(e)).toList(),
+      animes: json['animes'] != null
+          ? (json['animes'] as List).map((e) => Anime.fromJson(e)).toList()
+          : null,
     );
   }
 

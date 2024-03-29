@@ -1,15 +1,3 @@
-// {
-//     "id": 3,
-//     "kind": "wikipedia",
-//     "url": "http://en.wikipedia.org",
-//     "source": "shikimori",
-//     "entry_id": 49,
-//     "entry_type": "Anime",
-//     "created_at": "2022-11-26T17:19:33.393+03:00",
-//     "updated_at": "2022-11-26T17:19:33.393+03:00",
-//     "imported_at": null
-//   },
-
 class ExternalLink {
   final int? id;
   final String kind;

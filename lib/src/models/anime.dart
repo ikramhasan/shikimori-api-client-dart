@@ -1,24 +1,4 @@
-// {
-// "id": 16498,
-// "name": "Shingeki no Kyojin",
-// "russian": "Атака титанов",
-// "image": {
-// "original": "/system/animes/original/16498.jpg?1701440173",
-// "preview": "/system/animes/preview/16498.jpg?1701440173",
-// "x96": "/system/animes/x96/16498.jpg?1701440173",
-// "x48": "/system/animes/x48/16498.jpg?1701440173"
-// },
-// "url": "/animes/16498-shingeki-no-kyojin",
-// "kind": "tv",
-// "score": "8.54",
-// "status": "released",
-// "episodes": 25,
-// "episodes_aired": 25,
-// "aired_on": "2013-04-07",
-// "released_on": "2013-09-29"
-// },
-
-import 'package:shikimori_api/src/models/anime_image.dart';
+import 'package:shikimori_api/shikimori_api.dart';
 
 class Anime {
   final int id;

@@ -1,4 +1,4 @@
-import 'package:shikimori_api/src/models/anime_image.dart';
+import 'package:shikimori_api/shikimori_api.dart';
 
 class Forum {
   final int id;

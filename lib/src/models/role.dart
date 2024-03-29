@@ -1,5 +1,4 @@
-import 'package:shikimori_api/src/models/character.dart';
-import 'package:shikimori_api/src/models/anime_image.dart';
+import 'package:shikimori_api/shikimori_api.dart';
 
 class Person {
   final int id;
